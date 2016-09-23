@@ -49,16 +49,18 @@ const App = React.createClass({
   setAvatar(id){
     //some async action here
     const p1 = new Promise((resolve, reject)=>{
-      setTimeout(resolve, 2000);
+      setTimeout(resolve, 1000);
     });
     this.setState({asyncActionInProgress: true});
     return p1.then(()=>{
       this.setState({selectedImageId: id, showPopover: false, asyncActionInProgress: false});
     });
   },
+
   displayPopover(){
     this.setState({showPopover: true});
   },
+
   render() {
     const {images, selectedImageId, showPopover, asyncActionInProgress} = this.state;
     return (

@@ -1,5 +1,6 @@
 import React from 'react';
 import Photo from './Photo';
+
 const FixedPhoto = (props)=>{
     return (
       <div id="fixed-photo">

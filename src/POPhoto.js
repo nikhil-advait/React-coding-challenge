@@ -3,6 +3,7 @@ import Photo from './Photo';
 
 const POPhoto = React.createClass({
   isSelected: false,
+
   onClick() {
     this.isSelected = true;
     this.props.onSelect(this.props.img.id).then(()=> {this.isSelected = false});
