@@ -1,0 +1,66 @@
+.app {
+  text-align: center;
+  width: 400px;
+  margin: auto;
+  height: 400px;
+  top: 10%;
+  position: absolute;
+  left: 35%
+}
+
+.photo {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 3.8px;
+}
+
+.photo.po-photo {
+  float: left;
+}
+
+.photo.po-photo.selected-avatar {
+  border: 3px solid rgb(122, 161, 178);
+  box-sizing: border-box;
+}
+
+.photo.po-photo:hover{
+  border: 3px solid rgb(155, 160, 163);
+  box-sizing: border-box;
+}
+
+.photo.po-photo.animation{
+  border: 3px solid rgb(155, 160, 163);
+  box-sizing: border-box;
+  animation: rotation 1s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(359deg);}
+}
+
+.photo.fixed-photo:hover{
+  border: 1px solid rgb(155, 160, 163);
+  box-sizing: border-box;
+}
+
+.photo.fixed-photo.active{
+  border: 1px solid rgb(155, 160, 163);
+  box-sizing: border-box;
+}
+
+.po-text {
+  color: white
+}
+
+.popover {
+  width: 280px;
+  background-color: rgb(44, 48, 51);
+  box-shadow: 2px 2px 10px rgb(102, 102, 102);
+  padding: 14px;
+  margin: auto;
+  top: 70px;
+  left: 50px;
+  position: absolute;
+}
